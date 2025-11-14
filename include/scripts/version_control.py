@@ -243,8 +243,8 @@ def commit_to_git(**context):
         
         # Note about pushing to remote
         logger.info("\n📝 Note: To push to GitHub, configure remote:")
-        logger.info("   git remote add origin <your-repo-url>")
-        logger.info("   git push -u origin main")
+        logger.info("   https://github.com/zainulabidin776/dag-airflow.git")
+        logger.info("   git push -u origin master")
         
         return f"Git commit successful: {commit_hash[:7]}"
         
@@ -290,7 +290,7 @@ def push_to_github(**context):
         if not result.stdout.strip():
             logger.warning("⚠️  No Git remote configured")
             logger.info("To configure remote:")
-            logger.info("  git remote add origin https://github.com/username/repo.git")
+            logger.info("  git remote add origin https://github.com/zainulabidin776/dag-airflow.git")
             return "Skipped: No remote configured"
         
         logger.info(f"Remote repositories:\n{result.stdout}")

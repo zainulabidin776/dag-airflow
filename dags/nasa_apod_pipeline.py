@@ -335,7 +335,7 @@ with DAG(
         
         **Setup**:
         ```bash
-        git remote add origin https://github.com/zainulabidin776/airflow-dag.git
+        git remote add origin https://github.com/zainulabidin776/dag-airflow.git
         ```
         """
     )
