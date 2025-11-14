@@ -9,3 +9,7 @@ airflow-webserver.pid
 webserver_config.py
 airflow.cfg
 airflow.db
+FINAL_STATUS.md
+MASTER_SUMMARY.md
+QUICK_START.md
+SUBMISSION_COMPLETE.md
