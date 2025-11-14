@@ -43,7 +43,7 @@ default_args = {
     'owner': 'astronomer',
     'depends_on_past': False,
     'start_date': datetime(2024, 11, 14),
-    'email': ['your-email@example.com'],
+    'email': ['itsmezayynn@gmail.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 2,
@@ -326,7 +326,7 @@ with DAG(
         
         **Operations**:
         - Check if remote is configured
-        - Push commits to `origin/main`
+        - Push commits to `origin/master`
         
         **Note**: 
         - This task is optional

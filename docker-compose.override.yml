@@ -4,10 +4,13 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
+    # Host port mapping: expose container port 5432 on host port 5433.
+    # Use 5433 to avoid conflicts with any local PostgreSQL running on host.
     ports:
       - "5433:5432"
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
